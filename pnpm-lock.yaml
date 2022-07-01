@@ -8,6 +8,7 @@ specifiers:
   eslint-config-next: 12.2.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-simple-import-sort: ^7.0.0
+  husky: ^8.0.1
   next: 12.2.0
   prettier: ^2.7.1
   react: 18.2.0
@@ -27,6 +28,7 @@ devDependencies:
   eslint-config-next: 12.2.0_b5e7v2qnwxfo6hmiq56u52mz3e
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-plugin-simple-import-sort: 7.0.0_eslint@8.18.0
+  husky: 8.0.1
   prettier: 2.7.1
   typescript: 4.7.4
 
@@ -1101,6 +1103,12 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: true
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /ignore/5.2.0:
