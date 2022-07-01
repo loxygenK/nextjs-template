@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier -cw './**/*.ts?(x)'",
+    "fix": "pnpm format && pnpm lint:fix",
     "prepare": "husky install"
   },
   "dependencies": {
