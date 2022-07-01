@@ -4,7 +4,7 @@ function nextFix(/** @type string[] */ files) {
 }
 
 module.exports = {
-  "./**/*.tsx": [
+  "./**/*.ts?(x)": [
     nextFix, "prettier -cw "
   ]
 }
