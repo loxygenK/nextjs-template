@@ -7,10 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier -cw './**/*.ts?(x)'",
-    "fix": "pnpm format && pnpm lint:fix",
+    "lint": "$npm_execpath lint:eslint && $npm_execpath lint:prettier",
+    "lint:eslint": "next lint",
+    "lint:prettier": "prettier -c './**/*.ts?(x)'",
+    "fix": "$npm_execpath fix:prettier && $npm_execpath fix:eslint",
+    "fix:eslint": "$npm_execpath lint:eslint --fix",
+    "fix:prettier": "$npm_execpath lint:prettier -w",
     "prepare": "husky install"
   },
   "dependencies": {
